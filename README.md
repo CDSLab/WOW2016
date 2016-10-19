@@ -18,7 +18,11 @@
 
 
 
-<img width="539" alt="running" src="https://cloud.githubusercontent.com/assets/7436221/19538792/a866d236-960a-11e6-8bc7-b8b4f9a27f91.png">
+<img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19539588/fdc0d926-960e-11e6-9b97-0ed1d4c4f51a.png">
+
+<img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
+
+
 
 
 <img width="1130" alt="layout 3" src="https://cloud.githubusercontent.com/assets/7436221/19008276/f0bc53bc-871e-11e6-8886-77da346f061b.png">
