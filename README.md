@@ -16,32 +16,24 @@
 
 <img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">
 
-
+- Your application will start staging and will start. The app will have cloudant database by default to store node red metadata.
 
 <img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19539588/fdc0d926-960e-11e6-9b97-0ed1d4c4f51a.png">
 
-<img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
 
 
 
-<img width="1130" alt="layout 3" src="https://cloud.githubusercontent.com/assets/7436221/19008276/f0bc53bc-871e-11e6-8886-77da346f061b.png">
 
 
-- Name your application and give a unique name to your **host**
-
-<img width="1312" alt="screen shot 2016-09-30 at 3 10 13 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008419/071f5432-8720-11e6-8deb-7602f750f371.png">
-
-
-- Your application will start staging and will start. The app will have cloudant database by default to store node red metadata.
-
-<img width="1432" alt="screen shot 2016-09-30 at 3 15 24 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008519/c0144a2e-8720-11e6-9234-3457c7db52ea.png">
 
 - Select **Overview** tab on the left to see the detailed view of your application. 
+
+
+<img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
+
 As we are going to make our own assistance. We can enable it to notify us the temperature/weather of any place on the earth.
 For that we need to add a service to this app, which is called "Weather Company Data". So we select Add a service or API button.
-
-<img width="703" alt="screen shot 2016-09-30 at 5 45 55 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010484/d57c2a3e-8735-11e6-9a3f-a75a004bab70.png">
  
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
 
