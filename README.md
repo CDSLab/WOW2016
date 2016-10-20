@@ -8,7 +8,7 @@ We all lead busy lives, so it can be a challenge to find timely and relevant inf
 
 ### Application Flow
 http://watsondemos.mybluemix.net/
-![application flow](https://cloud.githubusercontent.com/assets/12015008/19007434/e266c7b6-8719-11e6-9ea6-460f2a83cd68.png)
+<img width="1059" alt="flow" src="https://cloud.githubusercontent.com/assets/7436221/19576366/9ae31918-96c7-11e6-8d7d-4c14e2857df1.png">
 
 ### Setup Instructions
 https://github.com/CDSLab/WOW2016/blob/master/Instructions.md
