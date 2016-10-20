@@ -11,4 +11,4 @@ http://watsondemos.mybluemix.net/
 ![application flow](https://cloud.githubusercontent.com/assets/12015008/19007434/e266c7b6-8719-11e6-9ea6-460f2a83cd68.png)
 
 ### Setup Instructions
-https://github.com/CDSLab/CodeCamp2016/blob/master/Instructions.md
+https://github.com/CDSLab/WOW2016/blob/master/Instructions.md
