@@ -83,18 +83,18 @@ and connect to the proper recieve node:
 ## Speech to text Microphone application
 - We are using another bluemix application to record our message and send it to our node-red app. Check the link below.
 ```
-https://codecamp-mic.mybluemix.net/
+https://wow-mic.mybluemix.net/
 ```
 
 Enter your application link in the text box shown. 
-http://<--host name-->.mybluemix.net
+<--host name-->.mybluemix.net
 
 And record your message like
 ```
 **What is the current weather in Chicago.**
 ```
-Upload your message and It makes a call to node-red application.
-And speaks out the result.
+Upload your message and it makes a call to your Node-RED backend application and speaks out the result.
+
 
 
 
