@@ -27,7 +27,7 @@ Watson speech-to-text service converts the human voice into the written word usi
 You can try it out in your favorite language at this link -- please use the Chrome browser:
 
 https://wow-mic.mybluemix.net/
-
+<img width="1110" alt="wow-mic" src="https://cloud.githubusercontent.com/assets/7436221/19613048/fc732056-979e-11e6-9c76-3336f374c751.png">
 Click "Record Audio" and wait for it to go red before you speak, then click it again to stop recording.  Don't worry about the Node-RED server URL yet; you will use that later in this lab.
 
 The Watson text-to-speech service produces natural-sounding speech from input text with appropriate cadence and intonation and also supports a variety of languages.
@@ -117,7 +117,7 @@ https://wow-mic.mybluemix.net/
 
 Enter your application link in the text box shown.
 <--host name-->.mybluemix.net
-
+<img width="622" alt="server url" src="https://cloud.githubusercontent.com/assets/7436221/19613077/2c8388b2-979f-11e6-9a3d-0a5d3ead6eff.png">
 And record your message like
 ```
 **What is the current weather in Chicago.**
