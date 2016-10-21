@@ -47,12 +47,11 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="1059" alt="flow" src="https://cloud.githubusercontent.com/assets/7436221/19576366/9ae31918-96c7-11e6-8d7d-4c14e2857df1.png">
 
 ### Weather Application flow
-
-include picture and flow description
+<img width="1004" alt="weather" src="https://cloud.githubusercontent.com/assets/7436221/19588839/3b145226-971d-11e6-945e-869228e131bd.png">
 
 ### News Application flows
+<img width="796" alt="news" src="https://cloud.githubusercontent.com/assets/7436221/19588840/40e036f2-971d-11e6-8784-dbcc8d861a69.png">
 
-include picture and flow description
 
 ## Setup Instructions
 
