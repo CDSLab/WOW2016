@@ -59,14 +59,14 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 
 2. Click on catalog to get various options of boilerplate code. Select Node-RED.
 
-<img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">
+<img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">.
 
-1. Name the application and click on **Create**.
+3. Name the application and click on **Create**.
 
 
-<img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">
+<img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">.
 
-1. Your application will start running. The app will have cloudant database by default to store node red metadata.
+4. Your application will start running. The app will have cloudant database by default to store node red metadata.
 
 <img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19539588/fdc0d926-960e-11e6-9b97-0ed1d4c4f51a.png">
 
@@ -75,7 +75,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 
 <img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
-1. Click on Connections tab to add two more services.
+1. Click on Connections tab to add two more services
 ..* Weather Company Data
 ..* Text to Speech 
 
