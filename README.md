@@ -102,8 +102,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="174" alt="screen shot 2016-10-01 at 8 57 21 am" src="https://cloud.githubusercontent.com/assets/8397737/19015290/3f16b920-87b6-11e6-96d5-1412e6451f75.png">
 
 13. Connect to the proper receive node.
- "Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news".
- 
+`Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news.`
 <img width="500" alt="screen shot 2016-10-01 at 9 06 17 am" src="https://cloud.githubusercontent.com/assets/8397737/19015294/57df73e8-87b6-11e6-91bc-0e5a41068ffa.png">
 
 14. Click on **Deploy**.
