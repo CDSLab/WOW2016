@@ -1,5 +1,3 @@
-stevens-mbp:WOW2016 smc2$ vi README.md
-
 # WOW2016
 
 ## Simplify Your Life with Your Own IBM Watson Personal Assistant
