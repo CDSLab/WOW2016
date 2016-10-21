@@ -61,41 +61,40 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 
 <img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">
 
-..Name the app.
-..Select a **web** application.
+3. Name the application and click on **Create**.
+
 
 <img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">
 
-- Your application will start staging and will start. The app will have cloudant database by default to store node red metadata.
+4. Your application will start running. The app will have cloudant database by default to store node red metadata.
 
 <img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19539588/fdc0d926-960e-11e6-9b97-0ed1d4c4f51a.png">
 
-
-
-
-
-
-
-
-- Select **Overview** tab on the left to see the detailed view of your application.
+5. Click on **Overview** tab to see the detailed view of your application.
 
 
 <img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
-As we are going to make our own assistance. We can enable it to notify us the temperature/weather of any place on the earth.
-For that we need to add a service to this app, which is called "Weather Company Data". So we select Add a service or API button.
+6. Click on Connections tab to add two more services.
+- Weather Company Data
+- Text to Speech 
 
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
+ 
+ <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
 
-It will create in few minutes and link itself to the existing app.
-Now your App has to be **Restaged** to reflect the updation.
+7. Restage the application after adding each service.
 
-- Go back to overview of your App and add another service called "Text to Speech" and restage the application.
+<img width="606" alt="restage" src="https://cloud.githubusercontent.com/assets/7436221/19589090/09c06c94-971f-11e6-85f5-1f901849f9ea.png">
 
-- Click on the link of your application. You will be taken to **NODE-RED**
-..Here, you can enter into Node-RED Editor to start making flows.
-Creating flows makes life easier with just dragging and dropping the functional nodes having code or API calls.
-It helps in debugging at each level as well so you know where the bug is located.
+
+8. Click on the **View App** of your application. You will be taken to **NODE-RED**
+<img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19589130/4acc192c-971f-11e6-8054-b0aee8c278d5.png">
+
+Click on this button to go into Node-red editor.
+
+<img width="369" alt="click on node red" src="https://cloud.githubusercontent.com/assets/7436221/19589171/88a3155c-971f-11e6-801a-234783724e5e.png">
+
 
 <img width="1145" alt="screen shot 2016-09-30 at 3 22 06 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008682/c2fab772-8721-11e6-9c58-6dd0d8ebde3e.png">
 
