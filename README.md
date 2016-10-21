@@ -92,6 +92,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
     3. `Import [News Flow](news.json)`
     
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
+
 11. Click on the "text to speech" node and select "US English" from the language dropdown.
 ![](https://cloud.githubusercontent.com/assets/8397737/19015255/ab039ce4-87b5-11e6-865b-7a7c26b3c2eb.png)
 <img width="494" alt="screen shot 2016-09-30 at 6 17 16 pm" src="https://cloud.githubusercontent.com/assets/8397737/19015276/0a02475e-87b6-11e6-866d-8892ab17b39d.png">
@@ -103,7 +104,8 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
  "Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news"
 <img width="500" alt="screen shot 2016-10-01 at 9 06 17 am" src="https://cloud.githubusercontent.com/assets/8397737/19015294/57df73e8-87b6-11e6-91bc-0e5a41068ffa.png">
 
- 
+14. Click on **Deploy**.
+<img width="241" alt="deploy" src="https://cloud.githubusercontent.com/assets/7436221/19590618/aba19a12-9727-11e6-83bf-498b85583ab6.png">
 
 ## Speech to text Microphone application
 - We are using another Bluemix application to record our message and send it to our node-red app. Check the link below.
