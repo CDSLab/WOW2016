@@ -87,9 +87,9 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="1147" alt="screen shot 2016-09-30 at 3 23 58 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008712/0cb77328-8722-11e6-8489-6cd007d4ef2f.png">
 
 10. Copy flows from this github repository and import in your Node-red editor like below.
-    1. `Import [Main Flow](main.json)`
-    2. `Import [Weather Flow](weather.json)`
-    3. `Import [News Flow](news.json)`
+    1. `Import [Main Flow](https://github.com/CDSLab/WOW2016/blob/master/main.json)`
+    2. `Import [Weather Flow](https://github.com/CDSLab/WOW2016/blob/master/weather.json)`
+    3. `Import [News Flow](https://github.com/CDSLab/WOW2016/blob/master/news.json)`
     
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
 
