@@ -70,8 +70,8 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
 6. Click on Connections tab to add two more services.
-........ `Weather Company Data`
-........ `Text to Speech` 
+ *`Weather Company Data`
+ *`Text to Speech` 
  
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
  <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
