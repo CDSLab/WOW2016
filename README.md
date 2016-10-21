@@ -86,6 +86,8 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="1145" alt="screen shot 2016-09-30 at 3 22 06 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008682/c2fab772-8721-11e6-9c58-6dd0d8ebde3e.png">
 <img width="1147" alt="screen shot 2016-09-30 at 3 23 58 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008712/0cb77328-8722-11e6-8489-6cd007d4ef2f.png">
 
+### Node-RED editor
+
 10. Copy flows from this github repository and import in your Node-red editor like below.
     1. `Import [Main Flow](main.json)`
     2. `Import [Weather Flow](weather.json)`
@@ -93,7 +95,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
     
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
 
-11. Click on the "text to speech" node and select "US English" from the language dropdown.
+11. Click on the "text to speech" node and select "US English".
 ![](https://cloud.githubusercontent.com/assets/8397737/19015255/ab039ce4-87b5-11e6-865b-7a7c26b3c2eb.png)
 <img width="494" alt="screen shot 2016-09-30 at 6 17 16 pm" src="https://cloud.githubusercontent.com/assets/8397737/19015276/0a02475e-87b6-11e6-866d-8892ab17b39d.png">
 
@@ -101,7 +103,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 <img width="174" alt="screen shot 2016-10-01 at 8 57 21 am" src="https://cloud.githubusercontent.com/assets/8397737/19015290/3f16b920-87b6-11e6-96d5-1412e6451f75.png">
 
 13. Connect to the proper receive node.
- "Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news"
+ "Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news".
 <img width="500" alt="screen shot 2016-10-01 at 9 06 17 am" src="https://cloud.githubusercontent.com/assets/8397737/19015294/57df73e8-87b6-11e6-91bc-0e5a41068ffa.png">
 
 14. Click on **Deploy**.
