@@ -58,21 +58,20 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 1. If you haven't already, create a bluemix account at https://console.ng.bluemix.net/.  You will be asked to select a unique name for your organization and space where you would like to host the application that you will build today.
 
 2. Click on catalog to get various options of boilerplate code. Select Node-RED.
-<img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">.
+<img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">
 
 3. Name the application and click on **Create**.
-<img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">.
+<img width="1176" alt="select node-RED" src="https://cloud.githubusercontent.com/assets/7436221/19538333/64ce84f8-9608-11e6-9b94-9b3249c8819b.png">
 
 4. Your application will start running. The app will have cloudant database by default to store node red metadata.
 <img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19539588/fdc0d926-960e-11e6-9b97-0ed1d4c4f51a.png">
 
-1. Click on **Overview** tab to see the detailed view of your application.
+5. Click on **Overview** tab to see the detailed view of your application.
 <img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
-1. Click on Connections tab to add two more services.
-
-..* Weather Company Data
-..* Text to Speech 
+6. Click on Connections tab to add two more services.
+  .....* Weather Company Data
+  .....* Text to Speech 
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
  <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
 
