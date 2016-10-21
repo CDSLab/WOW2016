@@ -72,6 +72,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 6. Click on Connections tab to add two more services.
     1. `Weather Company Data`
     2. `Text to Speech`
+    
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
  <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
 
@@ -89,6 +90,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
     1. `Import [Main Flow](main.json)`
     2. `Import [Weather Flow](weather.json)`
     3. `Import [News Flow](news.json)`
+    
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
 
 11. Click on the "text to speech" node and select "US English" from the language dropdown.
