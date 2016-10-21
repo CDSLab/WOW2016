@@ -69,57 +69,42 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 1. Click on **Overview** tab to see the detailed view of your application.
 <img width="1143" alt="overview" src="https://cloud.githubusercontent.com/assets/7436221/19539543/c21fc422-960e-11e6-9cae-0825da0431a8.png">
 
-1. Click on Connections tab to add two more services
+1. Click on Connections tab to add two more services.
+
 ..* Weather Company Data
 ..* Text to Speech 
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
  <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
 
 7. Restage the application after adding each service.
-
 <img width="606" alt="restage" src="https://cloud.githubusercontent.com/assets/7436221/19589090/09c06c94-971f-11e6-85f5-1f901849f9ea.png">
-
 
 8. Click on the **View App** of your application. You will be taken to **NODE-RED**
 <img width="1140" alt="view app" src="https://cloud.githubusercontent.com/assets/7436221/19589130/4acc192c-971f-11e6-8054-b0aee8c278d5.png">
 
-Click on this button to go into Node-red editor.
-
-<img width="369" alt="click on node red" src="https://cloud.githubusercontent.com/assets/7436221/19589171/88a3155c-971f-11e6-801a-234783724e5e.png">
-
-
+9. Click on this button to go into Node-red editor.
 <img width="1145" alt="screen shot 2016-09-30 at 3 22 06 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008682/c2fab772-8721-11e6-9c58-6dd0d8ebde3e.png">
-
-Left panel gives a vast range of nodes to drag and connect. This helps to perform functions and make an application running in minutes.
-
-
 <img width="1147" alt="screen shot 2016-09-30 at 3 23 58 pm" src="https://cloud.githubusercontent.com/assets/7436221/19008712/0cb77328-8722-11e6-8489-6cd007d4ef2f.png">
 
 Three files are added into this github repository. Create three flows.
 - Import [Main Flow](main.json)
 - Import [Weather Flow](weather.json)
 - Import [News Flow](news.json)
-
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
 
-Copy each flow from the github file to create flows on you node-red and paste here.
-
-A couple more steps are required to get the application up and running. First click on the "text to speech" node and select "US English"
+10. Copy each flow from the github file to create flows on you node-red and paste here.
+   .....A couple more steps are required to get the application up and running. First click on the "text to speech" node and select "US English"
 
 ![](https://cloud.githubusercontent.com/assets/8397737/19015255/ab039ce4-87b5-11e6-865b-7a7c26b3c2eb.png)
-
 <img width="494" alt="screen shot 2016-09-30 at 6 17 16 pm" src="https://cloud.githubusercontent.com/assets/8397737/19015276/0a02475e-87b6-11e6-866d-8892ab17b39d.png">
 
-The "name" field can be left blank. Finnally, click on the each link node on the main tab:
-
-
+11. The "name" field can be left blank. Finally, click on the each link node on the main tab:
 <img width="174" alt="screen shot 2016-10-01 at 8 57 21 am" src="https://cloud.githubusercontent.com/assets/8397737/19015290/3f16b920-87b6-11e6-96d5-1412e6451f75.png">
 
-and connect to the proper receive node:
-
+12. Connect to the proper receive node:
 <img width="500" alt="screen shot 2016-10-01 at 9 06 17 am" src="https://cloud.githubusercontent.com/assets/8397737/19015294/57df73e8-87b6-11e6-91bc-0e5a41068ffa.png">
 
-"Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news"
+13. "Outgoing weather" should connect to "Incoming weather" and "Outgoing news" should connect to "Incoming news"
 
 ## Speech to text Microphone application
 - We are using another Bluemix application to record our message and send it to our node-red app. Check the link below.
