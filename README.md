@@ -118,8 +118,16 @@ https://wow-mic.mybluemix.net/
 Enter your application link in the text box shown.
 <--host name-->.mybluemix.net
 <img width="622" alt="server url" src="https://cloud.githubusercontent.com/assets/7436221/19613077/2c8388b2-979f-11e6-9a3d-0a5d3ead6eff.png">
-And record your message like
+
+Example: http://watsonkg.mybluemix.net 
+Click on **Record Audio** to record your message eg. 
+
 ```
 **What is the current weather in Chicago.**
 ```
-Upload your message and it makes a call to your Node-RED backend application and speaks out the result.
+Stop recording and upload it to **Node-red**.
+
+If the url you entered would be wrong, it is expected to get an error pop up like below.
+<img width="418" alt="error" src="https://cloud.githubusercontent.com/assets/7436221/19613241/2f0d1584-97a0-11e6-91d4-d7a30512369a.png">
+
+You would receive a voice response if everything goes fine.
