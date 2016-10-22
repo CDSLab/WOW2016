@@ -41,21 +41,15 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 
 #### Alchemy News service
 
+The Alchemy Data News service indexes hundreds of thousands of articles and blogs every day, analyzes the text with machine learning algorithms, and makes those articles searchable across a variety of fields, including concept and sentiment.  API documentation for the Alchemy News service is located here:
 
-
-### Main Application Flow
-<img width="1059" alt="flow" src="https://cloud.githubusercontent.com/assets/7436221/19576366/9ae31918-96c7-11e6-8d7d-4c14e2857df1.png">
-
-### Weather Application flow
-<img width="1004" alt="weather" src="https://cloud.githubusercontent.com/assets/7436221/19588839/3b145226-971d-11e6-945e-869228e131bd.png">
-
-### News Application flows
-<img width="796" alt="news" src="https://cloud.githubusercontent.com/assets/7436221/19588840/40e036f2-971d-11e6-8784-dbcc8d861a69.png">
-
+http://docs.alchemyapi.com/docs
 
 ## Setup Instructions
 
-1. If you haven't already, create a bluemix account at https://console.ng.bluemix.net/.  You will be asked to select a unique name for your organization and space where you would like to host the application that you will build today.
+Now let's build our application!
+
+1. If you haven't already, create a Bluemix account at https://console.ng.bluemix.net/.  You will be asked to select a unique name for your organization and space where you would like to host the application that you will build today.
 
 2. Click on catalog to get various options of boilerplate code. Select Node-RED.
 <img width="1180" alt="Landing" src="https://cloud.githubusercontent.com/assets/7436221/19538326/60742c00-9608-11e6-897b-9efd7ba25a22.png">
@@ -72,7 +66,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
 6. Click on Connections tab to add two more services.
     1. `Weather Company Data`
     2. `Text to Speech`
-    
+
  <img width="669" alt="screen shot 2016-09-30 at 5 46 53 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010514/3082de1e-8736-11e6-9216-b96b7d2bfae4.png">
  <img width="852" alt="text" src="https://cloud.githubusercontent.com/assets/7436221/19589060/cc4bf5fe-971e-11e6-9bcd-370b5a021011.png">
 
@@ -90,7 +84,7 @@ The Weather Company Data Service from Bluemix lets you integrate weather data fr
     1. Import [Main Flow](https://github.com/CDSLab/WOW2016/blob/master/main.json)
     2. Import [Weather Flow](https://github.com/CDSLab/WOW2016/blob/master/weather.json)
     3. Import [News Flow](https://github.com/CDSLab/WOW2016/blob/master/news.json)
-    
+
 <img width="533" alt="screen shot 2016-09-30 at 5 31 54 pm" src="https://cloud.githubusercontent.com/assets/7436221/19010403/425c31fa-8734-11e6-9442-69010121a7d2.png">
 
 #### Nodes in Node-RED Editor
@@ -119,15 +113,56 @@ Enter your application link in the text box shown.
 <--host name-->.mybluemix.net
 <img width="622" alt="server url" src="https://cloud.githubusercontent.com/assets/7436221/19613077/2c8388b2-979f-11e6-9a3d-0a5d3ead6eff.png">
 
-Example: http://watsonkg.mybluemix.net 
-Click on **Record Audio** to record your message eg. 
+Example: http://watsonkg.mybluemix.net
+Click on **Record Audio** to record your message eg.
 
 ```
-**What is the current weather in Chicago.**
+What is the current weather in Chicago.
 ```
-Stop recording and upload it to **Node-red**.
+Stop recording and upload it to **Node-RED** by clicking on the "Upload to Node-RED" button.
 
-If the url you entered would be wrong, it is expected to get an error pop up like below.
+If the URL you entered is wrong, an error message will pop up like below:
 <img width="418" alt="error" src="https://cloud.githubusercontent.com/assets/7436221/19613241/2f0d1584-97a0-11e6-91d4-d7a30512369a.png">
 
-You would receive a voice response if everything goes fine.
+If everything works, you will receive a voice response (turn up your speakers).
+
+Questions currently supported are:
+
+- What is the [current] weather in (location) ?
+- What is the weather forecast for (location) ?
+- Give me [ positive | negative ] news about (topic for title search)
+
+## Application Flow Details
+
+Now we will study each flow a little further to understand more fully how this application works.
+
+#### Main Application Flow
+<img width="1059" alt="flow" src="https://cloud.githubusercontent.com/assets/7436221/19576366/9ae31918-96c7-11e6-8d7d-4c14e2857df1.png">
+
+**Explanation**: Text is passed in via a REST endpoint.  Then we feed that into a function node which calls decodeURIComponent to remove the URL format of the text.  That text is then fed into a switch statement which routes traffic to the news or weather flows based on if the input text contains "news" or "weather" keyword.  If the text contains "read it", then the flow grabs the last requested news article from Cloudant and flows that into the text-to-speech node.  If the text does not contain any recognized keywords, then pin 4 goes to a "format speech" node which formulates a catch-all response, "I don't understand what you meant".
+
+#### Weather Application flow
+<img width="1004" alt="weather" src="https://cloud.githubusercontent.com/assets/7436221/19588839/3b145226-971d-11e6-945e-869228e131bd.png">
+
+**Explanation**: This flow is triggered when the user asks for the weather.  The first thing that needs to be determined is the precise location that is being requested.  The first node in this flow, "Construct URL", is a function node that gets ready to call the Google maps API.  Open it up (double-click) and you will see some javascript that first parses the incoming text and scrapes the word(s) after "in" or "for" - this is assumed to be the location requested.  A string URL is created and passed as msg.url that will ask Google for more information about that location, including the latitude and longitude coordinates.  That URL is then fed into the http request node which returns the response from google.  The response is a string manifestation of JSON, so the next node will convert that string into parseable JSON.  
+
+Next we have some error checking.  The "Error check google API results" checks if zero results are returned from Google -- if so, a response is generated for the assistant to say that the location is not recognized.  But if results are returned, then a function node parses the JSON to extract the latitude and longitude coordinates.  Then the text transcription is parsed further to determine if "current" or "forecast" is requested, and that goes to the appropriate weather node which is pre-configured to return either the current weather or the forecast.  The JSON response from the weather node (which calls the weather service) is then parsed and wrapped inside an English response which then goes to the "text to speech" node which returns a wav in the payload.  Finally an audio html tag is added to the response and sent back with the wav as the http response, which allows the browser client to play the audio.
+
+#### News Application flow
+<img width="796" alt="news" src="https://cloud.githubusercontent.com/assets/7436221/19588840/40e036f2-971d-11e6-8784-dbcc8d861a69.png">
+
+**Explanation**: This flow gets triggered when the user asks for news. In "construct msg.query", incoming text is parsed to build a query to pass to the Alchemy News service via the News node.  Anything after "about" is set as the title search field, and if you want news articles with "positive" or "negative" sentiment, that is configured as well.  
+
+More options passed to the News node include: `start=now-1d&end=now` which requests news articles from the last 24 hours and `rank=high` which requests popular articles from reputable sources.  Debug nodes are placed before and after the call to the News node so you can see the input and outputs to the News service in the Debug panel.
+
+The response received from the News node is parsed and formatted and sent to the text-to-speech node and then returned as audio in the http response.
+
+You will also notice another wire flowing out of the News node and going to Cloudant.  That flow writes the text from the news article and persists it to a Cloudant database incase the says "Read it!".
+
+If you so wish, you can try to modify the query parameters passed into the news node, for example, you could change `start=node-1d` to `start=node-1h` for fresher news updates.  Or you could play with the sentiment thresholds.  Or there are many other options you could use to filter and search for articles, the API documentation is located at this link:
+
+http://docs.alchemyapi.com/docs
+
+### I got everything working, now what ?
+
+This is your application to modify and extend as you wish!  We recommend that you experiment and start with small changes.  For example, toggle the voice from male to female, or modify the text responses that are returned.  Later maybe you could add a whole new category of question with a new flow and even hook it up to other Bluemix services.  Your imagination is the limit!
