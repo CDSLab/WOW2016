@@ -149,7 +149,7 @@ Now we will study each flow a little further to understand more fully how this a
 Next we have some error checking.  The "Error check google API results" checks if zero results are returned from Google -- if so, a response is generated for the assistant to say that the location is not recognized.  But if results are returned, then a function node parses the JSON to extract the latitude and longitude coordinates.  Then the text transcription is parsed further to determine if "current" or "forecast" is requested, and that goes to the appropriate weather node which is pre-configured to return either the current weather or the forecast.  The JSON response from the weather node (which calls the weather service) is then parsed and wrapped inside an English response which then goes to the "text to speech" node which returns a wav in the payload.  Finally an audio html tag is added to the response and sent back with the wav as the http response, which allows the browser client to play the audio.
 
 #### News Application flow
-<img width="796" alt="news" src="https://cloud.githubusercontent.com/assets/7436221/19588840/40e036f2-971d-11e6-8784-dbcc8d861a69.png">
+<img width="884" alt="news" src="https://cloud.githubusercontent.com/assets/7436221/19617776/2f7eb6d2-97ee-11e6-83cf-62771a430ef8.png">
 
 **Explanation**: This flow gets triggered when the user asks for news. In "construct msg.query", incoming text is parsed to build a query to pass to the Alchemy News service via the News node.  Anything after "about" is set as the title search field, and if you want news articles with "positive" or "negative" sentiment, that is configured as well.  
 
