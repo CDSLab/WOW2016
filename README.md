@@ -109,11 +109,14 @@ Now let's build our application!
 https://wow-mic.mybluemix.net/
 ```
 
-Enter your application link in the text box shown.
+- Note that if you have time / interest, you can also clone this code yourself and host it on Bluemix (you will also need to create and connect the Watson "speech to text" service to it):
+https://github.com/CDSLab/WOW-mic
+
+To use the microphone client app, simply enter your Node-RED application link in the text box shown, as:
 <--host name-->.mybluemix.net
 <img width="622" alt="server url" src="https://cloud.githubusercontent.com/assets/7436221/19613077/2c8388b2-979f-11e6-9a3d-0a5d3ead6eff.png">
 
-Example: http://watsonkg.mybluemix.net
+Example: watsonkg.mybluemix.net
 Click on **Record Audio** to record your message eg.
 
 ```
